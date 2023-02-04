@@ -1,0 +1,212 @@
+/* ........................Reset.................................. */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;;
+}
+textarea {
+    resize: none;
+}
+/* ........................Reset.................................. */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;;
+
+}
+.chat-body{
+    border: 1px solid rgb(176, 165, 165);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    width: 500px;;
+    min-height: 500px;
+    overflow-y: auto;
+    
+}
+.chat-sidebar{
+    position: relative;
+    width: 200px;
+    height: 100%;
+    background-color: rgb(207, 198, 198);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 0 4px;
+}
+.new-chat{
+    height: 40px;
+}
+.users{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding: 0 2px;;
+    align-items: center;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 5px;
+}
+.users:hover{
+    background-color: rgb(184, 176, 176);
+}
+.users-image{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;;
+}
+.users label{
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.chat-area{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.chat-header{
+    position: relative;
+    height: 40px;
+    border: 1px solid rgb(207, 198, 198);
+    width: 100%;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px;
+    align-items: center;
+  
+}
+.user-details{
+    position: relative;
+    display: flex;
+    flex: 1;
+    gap: 3px;
+    align-items: center;
+}
+.user-details h4{
+    font-size: 12px;;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.chat-header .user-details img{
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 1px 0;
+}
+.chats-container{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 0;
+}
+.chats-container .chats{
+    position: relative;
+    overflow-y: auto;
+}
+.send-chat{
+    padding: 0 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    align-items: center;
+}
+.send-chat textarea{
+    position: relative;
+    width: 90%;
+    padding: 1px;
+    outline: none;
+    align-items: center;
+    
+}
+.send-chat textarea::-webkit-scrollbar{
+    display: none;
+}
+
+
+/* .................Login................... */
+.login-contaier{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+   border: 1px solid rgb(207, 198, 198);
+   padding: 20px 6px;
+   gap: 4px;
+   border-radius: 10px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.login-contaier .form-group{
+    display: flex;
+    flex-direction: column;
+    gap:0;
+}
+.login-contaier .form-group label{
+   font-size: 11px;;
+   font-weight: bold;
+
+}
+.login-contaier .form-group input{
+    outline: none;
+    height: 30px;
+    border-radius: 4px;
+    border: 1px solid rgb(207, 198, 198);
+    padding-left: 2px;
+}
+.login-contaier :last-child{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 10px;;
+    justify-content: center;
+    align-items: center;
+    
+}
+.login-contaier :last-child button{
+    height: 32px;
+    background-color: skyblue;
+    border: none;
+    padding: 5px 50px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;;
+;
+}
+.action-bar{
+    margin-top: 20px;
+}
+.action-bar span{
+    display: flex;
+    font-size: 12px;
+}
+.action-bar a{
+    text-decoration: none;
+    color: skyblue;
+    font-size: 12px;
+}
+/* ...............Signup.................... */
+.chooseImage{
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+    width: 90px;
+    background-color: darkgray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
