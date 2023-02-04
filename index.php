@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat System</title>
     <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
 </head>
 <body>
     <div class="container">
@@ -37,7 +39,7 @@
                     <div class="chats">chats</div>
                     <div class="send-chat">
                         <textarea placeholder="Type your message"></textarea>
-                        <button>Send</button>
+                        <button id="btnSend">Send</button>
                     </div>
                 </div>
             </div>          
