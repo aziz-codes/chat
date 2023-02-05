@@ -3,6 +3,7 @@
 
 // ............globals..........................
 const form = document.getElementById("form-login");
+const errorEl = document.getElementById("error-text");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let xhr = new XMLHttpRequest();
@@ -11,9 +12,7 @@ form.addEventListener("submit", (e) => {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
         let data = xhr.response;
-        console.log(data);
-      } else {
-        console.log("somehtign ");
+        errorEl.textContent = data;
       }
     }
   };
